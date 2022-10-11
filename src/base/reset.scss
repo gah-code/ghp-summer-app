@@ -1,0 +1,86 @@
+.container {
+  /* 1140px */
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  /* scroll-behavior: smooth; */
+}
+
+body {
+  // font-family: 'Rubik', sans-serif, Menlo;
+  font-family: 'Lato', sans-serif;
+  line-height: 1.7;
+  font-weight: 400;
+  color: #444;
+  overflow: hidden;
+}
+
+// Button Styling Resets
+a.button {
+  text-decoration: none;
+}
+
+// Reset default button styles
+button.button {
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
+  padding: 0;
+  cursor: pointer;
+
+  @media screen and (-ms-high-contrast: active) {
+    border: 2px solid currentcolor;
+  }
+}
+
+a.button,
+button.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  // Visual
+  // ... existing styles
+  // background-color: $btnColor;
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
+}
+
+button {
+  display: inline-block;
+  border: none;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  line-height: 1;
+  background: transparent;
+  -webkit-appearance: none;
+}
+
+button,
+fieldset,
+input,
+legend,
+select,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
