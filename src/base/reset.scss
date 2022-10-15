@@ -1,7 +1,13 @@
 body {
-  color: var(--color-primary);
-  font-size: 2rem;
+  font-family: 'Lato', sans-serif;
+  line-height: 1.7;
+  font-weight: 400;
+  color: #444;
+  overflow: hidden;
+  background-color: var(--color-background);
 }
+
+// Rule prevent things like borders and padding from expanding the expected element size (ex. a 25% width remains 25%, not 25% + border width + padding).
 
 * {
   padding: 0;
@@ -15,13 +21,20 @@ html {
   /* scroll-behavior: smooth; */
 }
 
-body {
-  // font-family: 'Rubik', sans-serif, Menlo;
-  font-family: 'Lato', sans-serif;
-  line-height: 1.7;
-  font-weight: 400;
-  color: #444;
-  overflow: hidden;
+p,
+li,
+h1,
+h2,
+h3,
+h4 {
+  // Help prevent overflow of long words/names/URLs
+  word-break: break-word;
+
+  // Optional, not supported for all languages:
+  hyphens: auto;
+
+  // Clear top margin
+  margin-top: 0;
 }
 
 // Button Styling Resets
@@ -42,6 +55,8 @@ button.button {
   }
 }
 
+// Flex alignment comes in handy should you add icons in the future, or impose width restrictions.
+
 a.button,
 button.button {
   display: inline-flex;
@@ -54,6 +69,16 @@ button.button {
   color: #fff;
   border-radius: 8px;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
+
+  padding: 0.25em 0.75em;
+  min-width: 10ch;
+  min-height: 44px;
+
+  &:focus {
+    outline-style: solid;
+    outline-color: transparent;
+    // box-shadow: 0 0 0 4px scale-color($btnColor, $lightness: -40%);
+  }
 }
 
 button {

@@ -1,4 +1,20 @@
+// --- 02 COLORS
+
 :root {
+  // Primary:
   --color-primary: #84a598;
   --color-primary-dark: #354c44;
+
+  // Tints:
+  --color-background: rgb(255, 255, 255);
+  --color-background-shade: #eaeede;
+
+  // --- 03 SHADES:
+
+  // --- 04 ACCENTS:
+
+  /// --- 05 SHADOWS
+  --shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+
+  // --- 06 WHITESPACE
 }

@@ -1,4 +1,23 @@
+/**************************/
+/* HEADER */
+/**************************/
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
 .section-hero {
   // background-color: var(--color-background-two);
   padding: 8.5rem 0 9.5rem 0;
+}
+
+/**************************/
+/* NAVIGATION */
+/**************************/
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 4.8rem;
 }

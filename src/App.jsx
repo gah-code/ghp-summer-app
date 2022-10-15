@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import reactLogo from './assets/react.svg';
-import Header from './components/layout/header/Header';
+import Hero from './components/layout/hero/Hero';
+import NavBar from './components/layout/navigation/NavBar';
 import './main.scss';
 
 function App() {
@@ -8,7 +9,8 @@ function App() {
 
   return (
     <div className='App'>
-      <Header />
+      <NavBar />
+      <Hero />
       <div>
         <a href='https://vitejs.dev' target='_blank'>
           <img src='/vite.svg' className='logo' alt='Vite logo' />
