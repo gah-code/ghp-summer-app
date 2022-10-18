@@ -31,7 +31,8 @@ export const NavLink = styled.a`
       transition: all 0.3s;
     }
 
-    &:hover {
+    &:hover,
+    &:active {
       color: var(--color-primary);
     }
   }

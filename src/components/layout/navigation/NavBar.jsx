@@ -12,31 +12,27 @@ const NavBar = () => {
       <nav className='main-nav'>
         <ul className='main-nav-list'>
           <li>
-            <NavLink className='main-nav-link' href='#how'>
-              How it works
-            </NavLink>
+            <NavLink href='#how'>How it works</NavLink>
           </li>
           <li>
-            <NavLink className='main-nav-link' href='#sessions'>
-              Sessions
-            </NavLink>
+            <NavLink href='#sessions'>Sessions</NavLink>
           </li>
           <li>
-            <NavLink className='main-nav-link' href='#pricing'>
-              Pricing
+            <NavLink href='#pricing'>Pricing</NavLink>
+          </li>
+          <li>
+            {' '}
+            <NavLink className='main-nav-link nav-cta' href='#cta'>
+              Book Today
             </NavLink>
           </li>
         </ul>
       </nav>
 
-      <Button primary type='button'>
-        <ion-icon class='icon-mobile-nav' name='menu-outline'>
-          test
-        </ion-icon>
-        <ion-icon class='icon-mobile-nav' name='close-outline'>
-          test{' '}
-        </ion-icon>
-      </Button>
+      <button type='button'>
+        <ion-icon class='icon-mobile-nav' name='menu-outline'></ion-icon>
+        <ion-icon class='icon-mobile-nav' name='close-outline'></ion-icon>
+      </button>
     </header>
   );
 };
