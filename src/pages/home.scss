@@ -27,12 +27,12 @@ header {
   padding: 1.2rem 2.4rem;
   border-radius: 9px;
   color: #fff;
-  background-color: #e67e22;
+  background-color: var(--color-primary);
 }
 
 .main-nav-link.nav-cta:hover,
 .main-nav-link.nav-cta:active {
-  background-color: #cf711f;
+  background-color: var(--color-primary-dark);
 }
 
 /* MOBILE */
