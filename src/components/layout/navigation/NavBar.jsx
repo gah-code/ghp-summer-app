@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button } from '../../../styles/Buttons.styled.js';
 import { NavLink } from '../../../styles/Buttons.styled.js';
+import { NavButton } from '../../../styles/Buttons.styled.js';
 
 const NavBar = () => {
   return (
@@ -17,22 +18,19 @@ const NavBar = () => {
           <li>
             <NavLink href='#sessions'>Sessions</NavLink>
           </li>
+
           <li>
-            <NavLink href='#pricing'>Pricing</NavLink>
-          </li>
-          <li>
-            {' '}
-            <NavLink className='main-nav-link nav-cta' href='#cta'>
+            <NavButton variant='secondary' className='' href='#cta'>
               Book Today
-            </NavLink>
+            </NavButton>
           </li>
         </ul>
       </nav>
 
-      <button type='button'>
+      {/* <button type='button'>
         <ion-icon class='icon-mobile-nav' name='menu-outline'></ion-icon>
         <ion-icon class='icon-mobile-nav' name='close-outline'></ion-icon>
-      </button>
+      </button> */}
     </header>
   );
 };
