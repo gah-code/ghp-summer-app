@@ -15,12 +15,16 @@
 // -0.5px
 // 0.75px
 
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Aleo', serif;
+
 .heading-primary,
 .heading-secondary,
 .heading-tertiary {
   font-weight: 700;
-  color: #444;
+  color: #333;
   letter-spacing: -0.5px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .heading-primary {
@@ -30,7 +34,7 @@
   line-height: 1.05;
   letter-spacing: -0.5px;
   margin-bottom: 3.2rem;
-  color: #263649;
+  color: var(--color-primary);
 }
 
 .heading-secondary {

@@ -52,12 +52,12 @@ export const NavButton = styled.a`
       transition: all 0.3s;
       padding: 1.3rem 2.8rem;
       border-radius: 10rem;
-      background: var(--color-primary);
+      background: var(--color-btn);
     }
 
     &:hover,
     &:active {
-      color: var(--color-primary);
+      background: var(--color-btn-hover);
     }
   }
 `;
