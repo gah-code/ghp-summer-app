@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+// import { variant } from 'styled-system';
 
 export const Button = styled.button`
    {
@@ -18,6 +19,13 @@ export const Button = styled.button`
     color: ${(props) => (props.primary ? 'white' : '#354c44')};
   }
 `;
+
+//  &:hover,
+//   &:active {
+//     background-color: var(--color-background-shade);
+//     /* Trick to add border inside */
+//     box-shadow: inset 0 0 0 3px #fff;
+//   }
 
 export const NavLink = styled.a`
    {
